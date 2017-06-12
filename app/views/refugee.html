@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Employment type
+{% endblock %}
+
+{% block content %}
+
+
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+      <p>
+        <strong class="phase-tag">BETA</strong>
+        <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+      </p>
+    </div>
+
+    <form class="form" method="post">
+
+    <h1 class="form-title heading-large">Is the claimant a Refugee?</h1>
+      
+      <fieldset class="form-group inline">
+
+      <div class="multiple-choice">
+      <input id="radio-inline-1" type="radio" name="refugee" value="yes">
+      Yes
+      <label class="block-label" for="radio-inline-1">
+      </label>
+      </div>
+
+      <div class="multiple-choice">
+      <input id="radio-inline-2" type="radio" name="refugee" value="no">
+        No
+      <label class="block-label" for="radio-inline-2">
+      </label>
+      </div>
+
+    </fieldset>
+        
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Employment type
+{% endblock %}
+
+{% block content %}
+
+
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <div class="phase-banner">
+      <p>
+        <strong class="phase-tag">BETA</strong>
+        <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+      </p>
+    </div>
+
+    <form class="form" method="post">
+
+    <h1 class="form-title heading-large">Does the claimant have access to the following:</h1>
+      
+
+      <ul class="list list-bullet">
+      <li>Passport</li>
+      <li>Three months wage slips or bank statements</li>
+      </ul>
+
+     <fieldset class="form-group inline">
+
+      <div class="multiple-choice">
+       <input id="radio-inline-1" type="radio" name="access" value="yes">
+        Yes
+      <label class="block-label" for="radio-inline-1">
+      </label>
+      </div>
+
+      <div class="multiple-choice">
+       <input id="radio-inline-2" type="radio" name="access" value="no">
+        No
+      <label class="block-label" for="radio-inline-2">
+      </label>
+      </div>
+
+    </fieldset>
+        
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+ </form>
+ </div>   
+ </div>
+</main>
+
+{% endblock %}
